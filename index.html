@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Form Project</title>
+	</head>
+	<body>
+		<main>
+			<aside class="image">
+				<div class="color">
+					<div class="logo">
+						<img
+							src="images/logo.svg"
+							alt="logo"
+							width="100"
+							height="140"
+						/><span class="name">Art1000 Gallery</span>
+					</div>
+				</div>
+				<p class="photo-credits">
+					Photo taken by
+					<a href="https://unsplash.com/@rocinante_11">Mick Haupt</a>
+				</p>
+			</aside>
+			<div class="content">
+				<div class="heading">
+					<h1 class="title">Art1000 Gallery</h1>
+					<p class="text">
+						Sign up now for a free tour trough our gallery
+					</p>
+				</div>
+				<div class="form">
+					<form action="#" method="post" id="form">
+						<div class="input">
+							<label for="userFirstName"
+								>First Name <span><abbr>*</abbr></span></label
+							>
+							<input
+								type="text"
+								name="userFirstName"
+								id="userFirstName"
+								required
+							/>
+						</div>
+						<div class="input">
+							<label for="userSecondName"
+								>Last Name <span><abbr>*</abbr></span></label
+							>
+							<input
+								type="text"
+								id="userSecondName"
+								name="userSecondName"
+								required
+							/>
+						</div>
+						<div class="input">
+							<label for="userEmail"
+								>E-mail <span><abbr>*</abbr></span></label
+							>
+							<input
+								type="email"
+								id="userEmail"
+								name="userEmail"
+								required
+								placeholder="example@gamil.com"
+							/>
+						</div>
+						<div class="input">
+							<label for="userTel">Phone Number</label>
+							<input
+								type="tel"
+								id="userTel"
+								name="userTel"
+								pattern="[+407][0-9]{8}"
+								placeholder="+40712345678"
+							/>
+						</div>
+						<div class="input">
+							<label for="pw"
+								>Password <span><abbr>*</abbr></span></label
+							>
+							<input
+								type="password"
+								id="pw"
+								name="userPassword"
+								required
+								minlength="10"
+							/>
+						</div>
+						<div class="input">
+							<label for="confirmPw"
+								>Confirm Password
+								<span><abbr>*</abbr></span></label
+							>
+							<input
+								type="password"
+								id="confirmPw"
+								name="userConfirmPassword"
+								required
+							/>
+						</div>
+						<div class="input">
+							<button form="form" type="submit" class="btn">
+								Create Account
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+	<script src="script.js"></script>
+</html>
